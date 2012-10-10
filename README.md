@@ -15,6 +15,20 @@ kick it on rails console
 User.indexes
 ```
 
+## Monkey Patching if you don't need to bundle
+touch config/initializers/arb_indexes.rb and put it.
+
+```ruby
+module ActiveRecord
+  class Base
+    class << self
+      def indexes
+        connection.indexes(table_name)
+      end
+    end
+  end
+end
+```
 
 ## See Also
 http://stackoverflow.com/questions/1683948/activerecord-finding-existing-table-indexes
