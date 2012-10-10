@@ -16,5 +16,5 @@ Gem::Specification.new do |gem|
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
   gem.require_paths = ['lib']
 
-  gem.add_development_dependency 'activerecord', '>= 3.0.0'
+  gem.add_runtime_dependency 'activesupport', '>= 3.0.0'
 end
