@@ -38,7 +38,7 @@ end
 ```
 
 ## See Also
-http://stackoverflow.com/questions/1683948/activerecord-finding-existing-table-indexes
+http://stackoverflow.com/questions/1683948/activerecord-finding-existing-table-indexes  
 Please "+1" this answer if you like.
 
 ## License
