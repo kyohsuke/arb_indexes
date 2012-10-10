@@ -12,7 +12,14 @@ end
 kick it on rails console
 
 ```ruby
-User.indexes
+User.indexes #=>
+[#<struct ActiveRecord::ConnectionAdapters::IndexDefinition
+  table="users",
+  name="index_users_on_screen_name",
+  unique=false,
+  columns=["screen_name"],
+  lengths=[nil],
+  orders=nil>]
 ```
 
 ## Monkey Patching if you don't need to bundle
