@@ -1,5 +1,3 @@
-require 'active_support'
-
 module ArbIndexes
   extend ActiveSupport::Concern
   def indexes
