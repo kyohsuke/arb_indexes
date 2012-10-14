@@ -1,3 +1,9 @@
-require 'active_support'
-require 'arb_indexes/version'
-require 'arb_indexes/base'
+module ActiveRecord
+  class Base
+    class << self
+      def indexes
+        connection.indexes(table_name)
+      end
+    end
+  end
+end

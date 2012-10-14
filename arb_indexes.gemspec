@@ -5,7 +5,7 @@ require 'arb_indexes/version'
 
 Gem::Specification.new do |gem|
   gem.name          = 'arb_indexes'
-  gem.version       = ArbIndexes::VERSION
+  gem.version       = '0.0.1'
   gem.authors       = ['Keisuke Kawahara']
   gem.email         = ['kyohsuke@conafie.jp']
   gem.description   = %q{get indexes from Model}
